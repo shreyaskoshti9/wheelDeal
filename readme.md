@@ -1,56 +1,57 @@
-WheelDeal: Vehicle Rental and Sales Application
+# WheelDeal: Vehicle Rental and Sales Application
 
 WheelDeal is a Django-based web application that allows users to register, log in, and manage vehicle listings for rent or sale. Users can browse available vehicles, contact owners, and list their vehicles for others to see.
 
-Features
+## Features
 
-User Registration and Authentication: Secure user registration, login, and logout functionality.
+- User Registration and Authentication: Secure user registration, login, and logout functionality.
 
-Vehicle Management: Users can list their vehicles for rent or sale, including details like make, model, price, and images.
+- Vehicle Management: Users can list their vehicles for rent or sale, including details like make, model, price, and images.
 
-Browse Listings: View all available vehicles and their details.
+- Browse Listings: View all available vehicles and their details.
 
-Contact Owners: Send inquiries to vehicle owners directly from the application.
+- Contact Owners: Send inquiries to vehicle owners directly from the application.
 
-Prerequisites
+## Prerequisites
 
-Python 3.8+
+- Python 3.8+
 
-Django 4.x
+- Django 4.x
+ 
+- Bootstrap (for frontend styling)
 
-Bootstrap (for frontend styling)
+- Virtual Environment (recommended)
 
-Virtual Environment (recommended)
+## Installation
 
-Installation
-
-Step 1: Clone the Repository
-
+Step 1: **Clone the Repository**
+```
 https://github.com/shreyaskoshti9/wheelDeal.git
 cd wheeldeal
-
-Step 2: Set Up a Virtual Environment
-
+```
+Step 2: **Set Up a Virtual Environment**
+```
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-
-Step 3: Install Dependencies
-
+```
+Step 3: **Install Dependencies**
+```
 pip install -r requirements.txt
-
-Step 4: Apply Migrations
-
+```
+Step 4: **Apply Migrations**
+```
 python manage.py makemigrations
 python manage.py migrate
-
-Step 5: Run the Development Server
-
+```
+Step 5: **Run the Development Server**
+```
 python manage.py runserver
-
+```
 Visit http://127.0.0.1:8000/ in your browser.
 
-Directory Structure
+## Directory Structure
 
+```
 WheelDeal/
 |-- main/
 |   |-- static/           # Static files (CSS, images, etc.)
@@ -69,67 +70,68 @@ WheelDeal/
 |-- manage.py             # Django management script
 |-- README.md             # Project documentation (this file)
 |-- requirements.txt      # Python dependencies
+```
 
-Usage
+## Usage
 
-1. Register an Account
+1. **Register an Account**
 
-Navigate to the Register page.
+- Navigate to the Register page.
 
-Fill in the required fields and submit.
+- Fill in the required fields and submit.
 
-2. Log In
+2. **Log In**
 
-Use the credentials to log in from the Login page.
+- Use the credentials to log in from the Login page.
 
-3. List a Vehicle
+3. **List a Vehicle**
 
-Go to List Vehicle.
+- Go to List Vehicle.
 
-Fill out the form with details like title, make, model, price, and upload an image.
+- Fill out the form with details like title, make, model, price, and upload an image.
 
-4. Browse Vehicles
+4. **Browse Vehicles**
 
-Navigate to Browse Vehicles to view all listed vehicles.
+- Navigate to Browse Vehicles to view all listed vehicles.
 
-5. Contact Vehicle Owner
+5. **Contact Vehicle Owner**
 
-Select a vehicle and use the Contact Owner form to send an inquiry.
+- Select a vehicle and use the Contact Owner form to send an inquiry.
 
-Built With
+## Built With
 
-Django: Backend framework
+- Django: Backend framework
 
-Bootstrap: Frontend styling
+- Bootstrap: Frontend styling
 
-SQLite: Default database (can be replaced with PostgreSQL, MySQL, etc.)
+- SQLite: Default database (can be replaced with PostgreSQL, MySQL, etc.)
 
-Screenshots
+## Screenshots
 
-Home Page: A welcoming interface.
+- Home Page: A welcoming interface.
 
-Register Page: User-friendly registration form.
+- Register Page: User-friendly registration form.
 
-List Vehicles: Add details for a vehicle listing.
+- List Vehicles: Add details for a vehicle listing.
 
-Browse Vehicles: View all available vehicles.
+- Browse Vehicles: View all available vehicles.
 
-Future Enhancements
+## Future Enhancements
 
-Add search and filter functionality for vehicle listings.
+- Add search and filter functionality for vehicle listings.
 
-Enable users to upload multiple images per vehicle.
+- Enable users to upload multiple images per vehicle.
 
-Implement a booking system for rentals.
+- Implement a booking system for rentals.
 
-Add user profile management.
+- Add user profile management.
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please create a pull request or submit an issue for any bugs or feature requests.
 
-License
+## License
 
-Contact
+## Contact
 
 For any inquiries or support, please contact.
