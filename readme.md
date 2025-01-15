@@ -130,8 +130,6 @@ Contributions are welcome! Please create a pull request or submit an issue for a
 
 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Contact
 
-For any inquiries or support, please contact [your_email@example.com].
+For any inquiries or support, please contact.
