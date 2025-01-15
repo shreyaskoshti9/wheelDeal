@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Browse Vehicles</h2>
+<div class="row">
+    {% for vehicle in vehicles %}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{{ vehicle.image.url }}" class="card-img-top" alt="Vehicle Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ vehicle.title }}</h5>
+                    <p class="card-text">{{ vehicle.description }}</p>
+                    <p class="card-text">Price: ${{ vehicle.price }}</p>
+                    <a href="{% url 'contact_owner' vehicle.id %}" class="btn btn-primary">Contact Owner</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Contact Owner</h2>
+<h3>{{ vehicle.title }}</h3>
+<form method="post" class="row g-3">
+    {% csrf_token %}
+    <div class="col-12">
+        <label for="message" class="form-label">Your Message:</label>
+        <textarea name="message" id="message" class="form-control" rows="4">Customer name: {{ user.username }} Email: {{user.email}}</textarea>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+</form>
+{% endblock %}
